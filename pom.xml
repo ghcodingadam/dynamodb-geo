@@ -24,23 +24,25 @@
 	</licenses>
 
 	<properties>
-		<aws-java-sdk.version>1.5.5</aws-java-sdk.version>
+		<aws-java-sdk.version>1.11.68</aws-java-sdk.version>
 	</properties>
 
 	<dependencies>
 		<!-- The AWS SDK for Java, and its dependencies on libraries like Jackson, 
 			are required -->
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
 		<dependency>
 			<groupId>com.amazonaws</groupId>
 			<artifactId>aws-java-sdk</artifactId>
-			<version>${aws-java-sdk.version}</version>
+			<version>1.11.68</version>
 		</dependency>
+
 
 		<!-- JUnit is needed to compile the integration test classes -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.11</version>
+			<version>4.12</version>
 			<optional>true</optional>
 		</dependency>
 
@@ -55,8 +57,8 @@
 
 		<dependency>
 			<groupId>com.google.common</groupId>
-			<artifactId>guava-r09</artifactId>
-			<version>1.0.0</version>
+			<artifactId>guava</artifactId>
+			<version>20.0</version>
 			<scope>system</scope>
 			<systemPath>${basedir}/lib/guava-r09/guava-r09.jar</systemPath>
 		</dependency>
